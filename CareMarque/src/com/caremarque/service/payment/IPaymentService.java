@@ -11,10 +11,12 @@ public interface IPaymentService {
 	
 	public Payment getPayment(String paymentId);
 	
-	public ArrayList<Payment> getPayments();
+	public String getPayments();
 	
 	public Payment updatePayment(String paymentid, Payment p);
 	
-	public void cancelPayment(String paymentId);
+	public String cancelPayment(String paymentId);
+	
+	public ArrayList<String> getPaymentIDs();
 
 }

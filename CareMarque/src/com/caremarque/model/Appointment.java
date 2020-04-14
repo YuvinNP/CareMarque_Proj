@@ -5,29 +5,30 @@ import java.sql.Time;
 
 public class Appointment {
 
-	private String appointmentId;
+	private int appointmentId;
 	private String patientId;
 	private String patientName;
 	private String phone;
 	private String doctorName;
-	private String hospitalName;
-	private String hospitalId;
-	private Date appointmentDate;
-	private Date lastUpdateDate;
-	private Time appointmentTime;
-	private Time lastUpdateTime;
 	private String specialization;
+	private String hospitalId;
+	private String hospitalName;
+	private String appointmentDate;
+	private String appointmentTime;
+	private String lastUpdateDate;
+	private String lastUpdateTime;
 	private String appointmentStatus;
 
 	public Appointment() {
 		// TODO Auto-generated constructor stub
+		super();
 	}
 
-	public String getAppointmentId() {
+	public int getAppointmentId() {
 		return appointmentId;
 	}
 
-	public void setAppointmentId(String appointmentId) {
+	public void setAppointmentId(int appointmentId) {
 		this.appointmentId = appointmentId;
 	}
 
@@ -63,12 +64,12 @@ public class Appointment {
 		this.doctorName = doctorName;
 	}
 
-	public String getHospitalName() {
-		return hospitalName;
+	public String getSpecialization() {
+		return specialization;
 	}
 
-	public void setHospitalName(String hospitalName) {
-		this.hospitalName = hospitalName;
+	public void setSpecialization(String specialization) {
+		this.specialization = specialization;
 	}
 
 	public String getHospitalId() {
@@ -79,44 +80,44 @@ public class Appointment {
 		this.hospitalId = hospitalId;
 	}
 
-	public Date getAppointmentDate() {
+	public String getHospitalName() {
+		return hospitalName;
+	}
+
+	public void setHospitalName(String hospitalName) {
+		this.hospitalName = hospitalName;
+	}
+
+	public String getAppointmentDate() {
 		return appointmentDate;
 	}
 
-	public void setAppointmentDate(Date appointmentDate) {
+	public void setAppointmentDate(String appointmentDate) {
 		this.appointmentDate = appointmentDate;
 	}
 
-	public Date getLastUpdateDate() {
-		return lastUpdateDate;
-	}
-
-	public void setLastUpdateDate(Date lastUpdateDate) {
-		this.lastUpdateDate = lastUpdateDate;
-	}
-
-	public Time getAppointmentTime() {
+	public String getAppointmentTime() {
 		return appointmentTime;
 	}
 
-	public void setAppointmentTime(Time appointmentTime) {
+	public void setAppointmentTime(String appointmentTime) {
 		this.appointmentTime = appointmentTime;
 	}
 
-	public Time getLastUpdateTime() {
+	public String getLastUpdateDate() {
+		return lastUpdateDate;
+	}
+
+	public void setLastUpdateDate(String lastUpdateDate) {
+		this.lastUpdateDate = lastUpdateDate;
+	}
+
+	public String getLastUpdateTime() {
 		return lastUpdateTime;
 	}
 
-	public void setLastUpdateTime(Time lastUpdateTime) {
+	public void setLastUpdateTime(String lastUpdateTime) {
 		this.lastUpdateTime = lastUpdateTime;
-	}
-
-	public String getSpecialization() {
-		return specialization;
-	}
-
-	public void setSpecialization(String specialization) {
-		this.specialization = specialization;
 	}
 
 	public String getAppointmentStatus() {
@@ -126,25 +127,28 @@ public class Appointment {
 	public void setAppointmentStatus(String appointmentStatus) {
 		this.appointmentStatus = appointmentStatus;
 	}
-	
-	public Appointment(String appointmentId, String patientId, String patientName, String phone, String doctorName,
-			String hospitalName, String hospitalId, Date appointmentDate, Date lastUpdateDate, Time appointmentTime,
-			Time lastUpdateTime, String specialization, String appoinmentStatus) {
+
+	public Appointment(int appointmentId, String patientId, String patientName, String phone, String doctorName,
+			String specialization, String hospitalId, String hospitalName, String appointmentDate,
+			String appointmentTime, String lastUpdateDate, String lastUpdateTime, String appointmentStatus) {
 		super();
 		this.appointmentId = appointmentId;
 		this.patientId = patientId;
 		this.patientName = patientName;
 		this.phone = phone;
 		this.doctorName = doctorName;
-		this.hospitalName = hospitalName;
-		this.hospitalId = hospitalId;
-		this.appointmentDate = appointmentDate;
-		this.lastUpdateDate = lastUpdateDate;
-		this.appointmentTime = appointmentTime;
-		this.lastUpdateTime = lastUpdateTime;
 		this.specialization = specialization;
-		this.appointmentStatus = appoinmentStatus;
+		this.hospitalId = hospitalId;
+		this.hospitalName = hospitalName;
+		this.appointmentDate = appointmentDate;
+		this.appointmentTime = appointmentTime;
+		this.lastUpdateDate = lastUpdateDate;
+		this.lastUpdateTime = lastUpdateTime;
+		this.appointmentStatus = appointmentStatus;
 	}
+	
+	
+
 	
 	
 
